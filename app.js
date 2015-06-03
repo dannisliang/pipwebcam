@@ -1,4 +1,4 @@
-var gui = require('nw.gui');
+
 //initiate video
 var video = navigator.webkitGetUserMedia({audio : false, video : true},function(stream){
     var video = document.querySelector('#main');

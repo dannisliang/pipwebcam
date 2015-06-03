@@ -1,0 +1,21 @@
+body{
+    background:#000;
+    overflow:hidden;
+}
+.sizeicon{
+    position:fixed;
+    z-index:100;
+    right:15px;
+    bottom:10px;
+    border-radius:50%;
+    padding:5px 5px 1px 5px;
+    background:white;
+    opacity:0;
+    transition:all 0.5s;
+}
+video:hover+.sizeicon, body:hover .sizeicon{
+    opacity:0.8;
+}
+#main{
+    top:calc( (100% - 80%) % 2 );
+}
