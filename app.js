@@ -8,4 +8,5 @@ var video = navigator.webkitGetUserMedia({audio : false, video : true},function(
     console.log(err);
 });
 //move to the corner
-
+window.moveTo(1000,700);
+console.log(window.screen);
