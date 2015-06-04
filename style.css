@@ -33,3 +33,23 @@ video:hover+.floatingicon, body:hover .floatingicon{
     top:calc( (100% - 80%) % 2 );
 }
 
+
+.settings {
+    padding:20px;
+    background:white;
+    border-radius:30px;
+    position:fixed;
+    width:200px;
+    height:50px;
+    text-align: center;
+    left:calc( 50vw - 120px );
+    top:calc( 50vh - 45px);
+    display:none;
+}
+
+
+
+.spacer {
+    display:block;
+    height:15px;
+}
