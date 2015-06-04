@@ -2,20 +2,34 @@ body{
     background:#000;
     overflow:hidden;
 }
-.sizeicon{
-    position:fixed;
-    z-index:100;
-    right:15px;
+.floatingicon{
+    width:32px;
+    height:32px;
     bottom:10px;
-    border-radius:50%;
-    padding:5px 5px 1px 5px;
-    background:white;
     opacity:0;
     transition:all 0.5s;
+    z-index:100;
+    position:fixed;
+    border-radius:50%;
+    cursor:pointer;
 }
-video:hover+.sizeicon, body:hover .sizeicon{
+.floatingicon:hover{
+    background-color:#eee;
+}
+.sizeicon{
+    right:15px;
+    background:#fff url('res/settings.png') no-repeat;
+    background-position:center center;
+}
+.exiticon {
+    background:#fff url('res/exit.png') no-repeat;
+    right: 52px;
+    background-position:center center;
+}
+video:hover+.floatingicon, body:hover .floatingicon{
     opacity:0.8;
 }
 #main{
     top:calc( (100% - 80%) % 2 );
 }
+

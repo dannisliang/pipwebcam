@@ -3,6 +3,7 @@
   "main": "index.html",
     "window": {
     "title": "PIP Manager",
+    "toolbar":false,
     "icon": "link.png",
     "frame": false,
     "width": 320,

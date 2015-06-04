@@ -1,4 +1,5 @@
-
+var gui = require('nw.gui');
+//console.log(gui.App.argv);
 //initiate video
 var video = navigator.webkitGetUserMedia({audio : false, video : true},function(stream){
     var video = document.querySelector('#main');
@@ -7,6 +8,7 @@ var video = navigator.webkitGetUserMedia({audio : false, video : true},function(
 },function(err){
     console.log(err);
 });
-//move to the corner
-window.moveTo(1000,700);
-console.log(window.screen);
+document.querySelector('.exiticon').addEventListener('click',function(){
+    console.log('hello');
+    gui.App.quit();
+})
