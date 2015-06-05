@@ -23,3 +23,16 @@ document.querySelector('.ok').addEventListener('click',function(){
     window.resizeTo(sizes[newSize].width,sizes[newSize].height);
     document.querySelector('.settings').style.display="none";
 });
+//tray icon
+var tray = new gui.Tray({ title: 'PiP Boom!', icon: 'res/tray.png',tooltip:'PiP Boom!'});
+
+// tray icon menu
+var menu = new gui.Menu();
+menu.append(new gui.MenuItem({label: 'About',click:function(){
+    //license and stuff maybe
+    console.log('anam');
+}}));
+menu.append(new gui.MenuItem({label: 'Exit',click:function(){
+    gui.App.quit();
+}}));
+tray.menu = menu
