@@ -30,9 +30,9 @@ var tray = new gui.Tray({ title: 'PiP Boom!', icon: 'res/tray.png',tooltip:'PiP 
 var menu = new gui.Menu();
 menu.append(new gui.MenuItem({label: 'About',click:function(){
     //license and stuff maybe
-    console.log('anam');
+    
 }}));
 menu.append(new gui.MenuItem({label: 'Exit',click:function(){
     gui.App.quit();
 }}));
-tray.menu = menu
+tray.menu = menu;
