@@ -45,6 +45,7 @@ video:hover+.floatingicon, body:hover .floatingicon{
     left:calc( 50vw - 120px );
     top:calc( 50vh - 45px);
     display:none;
+    transition:all 0.5s;
 }
 
 
